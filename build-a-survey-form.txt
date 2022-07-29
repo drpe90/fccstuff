@@ -1,0 +1,67 @@
+
+
+<!DOCTYPE html>
+  <html>
+   <head>
+    <title>Music Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  <head>
+  <body>
+    <h1 id="title">Music Survey</h1>
+    <p id="description">Please take a minute to complete a short survey on your music preferences</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name: <input type="text" id="name" placeholder="Name" required /></label>
+        <label id="email-label">Email: <input type="email" id="email" placeholder="Email" required /></label>
+        <label id="number-label">Age (years): <input type="number" id="number" min="13" max="120" placeholder="Age" required />
+      </fieldset>
+<!--Part Two: dropdown selector -->
+      <fieldset>
+        <label>Where do you listen to music the most?
+          <select name="referrer" id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Gym</option>
+            <option value="2">Home</option>
+            <option value="3">Car/Bus</option>
+            <option value="4">School/Work</option>
+            <option value="5">Everywhere I go</option>
+          </select>
+        </label>
+      </fieldset>
+<!-- Part 3: Radio buttons and checkboxes -->
+      <fieldset>
+        <label>Your preferred method of music delivery</label>
+        <label><input type="radio" name="delivery" class="inline" value="cd" /> CD</label>
+        <label><input type="radio" name="delivery" class="inline" value="digital" /> Digital</label>
+        <label><input type="radio" name="delivery" class="inline" value="vinyl" /> Vinyl</label>
+        <label><input type="radio" name="delivery" class="inline" value="tape" />Audiotape</label>
+        <label><input type="radio" name="delivery" class="inline" value="live" />Live</label>
+      </fieldset>
+      <fieldset>
+        <label>What music genre do you like? (Check all that apply)
+          <input type="checkbox" value="terms" class="inline" /> Pop
+          <input type="checkbox" value="terms" class="inline" /> Rap/Hip-hop
+          <input type="checkbox" value="terms" class="inline" /> Rock/Metal
+          <input type="checkbox" value="terms" class="inline" /> Country
+          <input type="checkbox" value="terms" class="inline" /> Classical
+          <input type="checkbox" value="terms" class="inline" /> Electronic
+          <input type="checkbox" value="terms" class="inline" /> Game/Movie soundtracks
+          <input type="checkbox" value="terms" class="inline" /> Ambient
+          <input type="checkbox" value="terms" class="inline" /> Other
+      </fieldset> 
+
+<!-- Part 4: text area -->
+
+      <label>What is your favorite song lyrics?
+        <textarea name="story" rows="3" cols="30" placeholder="Bus stop, wet day, she's there, I say 'Please share my umbrella'..."></textarea>
+			</label>
+
+<!-- "Submit" button -->
+
+      <input type="submit" id="submit" />
+    </form>
+  </body>
+</html>
+
+
+
