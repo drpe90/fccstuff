@@ -1,0 +1,53 @@
+body {
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  background-image: url(https://images.unsplash.com/photo-1615800098799-0ccb261b1f92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8)
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+li {
+  display: flex;
+	justify-content: space-evenly;
+  flex-wrap: wrap;
+	align-items: center;
+	padding-inline-start: 0;
+	margin-block: 0;
+  list-style: none;
+  font-size: 20px;
+}
+
+h1, p {
+  text-align: center;
+  padding: 20px;
+}
+
+p, #img-caption, #link-ref, #tribute-info, #navlist {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 24px;
+}
+
+#link-ref {
+  padding-bottom: 50px;
+}
+
+
+#logo {
+  
+  display: block;
+  max-width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}
+
+#img-caption {
+  padding-left: 70px;
+  padding-right: 70px;
+}
