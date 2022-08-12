@@ -1,0 +1,177 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+  background-color: #24272A;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  color: whitesmoke;
+  font-size: 18px;
+  
+  }
+
+  h1, h2 {
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+
+  #About {
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+body {
+  display: block;
+}
+
+#header-img {
+  width: auto;
+  height: 40%;
+  padding-bottom: 2em;
+  padding-top: 2em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+a:hover {
+  color: #ff3333;
+}
+
+#nav-bar li{
+  display: inline;
+  padding: 0px 15px;
+  
+}
+
+#nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 20px;
+  margin: 20px;
+}
+
+#video {
+  display: block;
+  margin: auto;
+}
+
+#Bat-Signal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#Bat-signal li {
+  display: inline-block;
+  padding: 28px;
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+}
+
+ .grid {
+  display: grid;
+  text-align: center;
+  padding: 30px;
+}
+
+#video {
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.container-1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-item {
+  max-width: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  align-content: space-around;
+  padding: 15px;
+  border: 1px solid #fff;
+  margin: 25px;
+}
+
+.level-subhead {
+  margin-bottom: 20px;
+}
+
+.container-item li {
+  list-style-position: inside;
+}
+
+button {
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: whitesmoke;
+  background-color: #000;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button:hover {
+  background-color: #ff3333;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 550px) {
+
+}
+
+
+
+hr {
+  width: 65%;
+  margin: 0 auto;
+}
+
+#submit {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: whitesmoke;
+  background-color: #000;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+#email {
+  font-size: 22px;
+}
