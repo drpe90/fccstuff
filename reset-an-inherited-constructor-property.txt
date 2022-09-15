@@ -1,0 +1,14 @@
+function Animal() { }
+function Bird() { }
+function Dog() { }
+
+Bird.prototype = Object.create(Animal.prototype);
+Dog.prototype = Object.create(Animal.prototype);
+
+// Assigning constructors to their respective objects:
+
+let duck = new Bird();
+let beagle = new Dog();
+
+duck.constructor = Bird;
+beagle.constructor = Dog;

@@ -1,0 +1,5 @@
+//IIFE or Immediately Invoked Function Expression (executed as soon as declared):
+
+(function() {
+  console.log("A cozy nest is ready");
+})();
