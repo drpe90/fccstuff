@@ -1,0 +1,12 @@
+function Dog(name) {
+  this.name = name;
+}
+
+// Checking the constructor property (it's better to use "objectOf" instead)
+function joinDogFraternity(candidate) {
+  if (candidate.constructor === Dog) {
+    return true;
+  } else {
+    return false;
+  }
+}

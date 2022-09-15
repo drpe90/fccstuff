@@ -1,0 +1,9 @@
+function Dog(name) {
+  this.name = name;
+}
+
+let beagle = new Dog("Snoopy");
+
+// Checking if proto relationship is true using a isPrototypeOf method:
+
+Dog.prototype.isPrototypeOf(beagle);
