@@ -1,0 +1,18 @@
+/*In this solution, regular expression ^[A-Z] is used to check (test) if the first character of before is uppercase.
+If first letter of before is capitalized, change the first letter of after to uppercase.
+Else: If first letter of before is lowercase, change the first letter of after to lowercase
+Return the new string replacing before with after.*/
+
+function myReplace(str, before, after) {
+
+if (/^[A-Z]/.test(before)) {
+  after = after[0].toUpperCase() + after.substring(1)
+} else {
+  after = after[0].toLowerCase() + after.substring(1)
+}
+
+return str.replace(before,after);
+};
+
+
+myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");

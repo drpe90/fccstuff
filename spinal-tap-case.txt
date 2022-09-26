@@ -1,0 +1,13 @@
+/* The first replace() puts a space before any encountered uppercase characters in the string str so that the spaces can be replaced by dashes later on.
+Instead of using replace() here to replace whitespace and underscores with dashes, the string is split() on the regular expression /(?:_| )+/ and join()-ed on -.*/
+
+function spinalCase(str) {
+
+  str = str.replace(/([a-z])([A-Z])/g, "$1 $2");
+  return str
+  .toLowerCase()
+  .split(/(?:_| )+/)
+  .join("-");
+}
+
+spinalCase('This Is Spinal Tap');

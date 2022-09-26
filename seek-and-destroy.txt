@@ -1,0 +1,8 @@
+//Using spread operator to retrieve the arguments.
+//Return the filtered array, using includes().
+
+function destroyer(arr, ...toRemove) {
+  return arr.filter(elem => !toRemove.includes(elem));
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
