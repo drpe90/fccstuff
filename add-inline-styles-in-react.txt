@@ -1,0 +1,13 @@
+{/*You can declare a component style passing the object directly as a prop ‘style’. Just remember that each property of the style object is camelcased. So properties like ‘font-size’ is declared ‘fontSize’ to be a valid javascript object property.*/}
+
+const styles = {color: 'purple', fontSize: 40, border: '2px solid purple'}
+// Change code above this line
+class Colorful extends React.Component {
+  render() {
+    // Change code below this line
+    return (
+      <div style={styles}>Style Me!</div>
+    );
+    // Change code above this line
+  }
+};

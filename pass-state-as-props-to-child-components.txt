@@ -1,0 +1,34 @@
+{/*In this challenge we are going to be passing state, but since state is local to its parent component we must use props to pass into the child component. Using props in child components will allow us to keep all the state data in the parent component and we can pass the data in one direction to the children components.*/}
+
+class MyApp extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: 'CamperBot'
+    }
+  }
+  render() {
+    return (
+       <div>
+         {/* Change code below this line */}
+         <Navbar name={this.state.name}/>
+         {/* Change code above this line */}
+       </div>
+    );
+  }
+};
+
+class Navbar extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+    <div>
+      {/* Change code below this line */}
+      <h1>Hello, my name is: {this.props.name}</h1>
+      {/* Change code above this line */}
+    </div>
+    );
+  }
+};

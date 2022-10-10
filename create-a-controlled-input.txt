@@ -1,0 +1,29 @@
+class ControlledInput extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      input: ''
+    };
+    // Remember to bind this to the function.
+    this.handleChange = this.handleChange.bind(this);
+    // Change code above this line
+  }
+  // So to begin with we have a skeleton in which we have a class named ControlledInput and a state variable named input.
+    handleChange(event) {
+      this.setState({
+        input: event.target.value
+      });
+    }
+  // Now your next step will involve creating an input box and trigger it when someone types anything. Luckily we have an event called onChange() to serve this purpose.
+  render() {
+    return (
+      <div>
+        { /* Change code below this line */}
+        <input value = {this.state.input} onChange = {this.handleChange} />
+        { /* Change code above this line */}
+        <h4>Controlled Input:</h4>
+        <p>{this.state.input}</p>
+      </div>
+    );
+  }
+};
